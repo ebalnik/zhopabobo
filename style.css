@@ -1,0 +1,60 @@
+
+.game {
+    width: 1400px;
+    height: 650px;
+    border-bottom: 1px solid #000;
+    margin: auto;
+}
+
+#dino {
+    width: 210px;
+    height: 210px;
+    background-image: url(img/oleg2.png);
+    background-size: 210px 210px;
+    position: relative;
+    top: 440px;
+    left: 150px;
+}
+
+#cactus {
+    width: 210px;
+    height: 210px;
+    background-image: url(/img/izvraq.png);
+    background-size: 210px 210px;
+    position: relative;
+    top: 230px;
+    left: 1250px;
+    animation: cactusMov 2s infinite linear;
+}
+
+@keyframes cactusMov {
+    0% {
+        left: 1250px;
+    }
+    100% {
+        left: -20px;
+    }
+}
+
+.jump {
+    animation: jump 1s linear;
+}
+
+@keyframes jump {
+    0% {
+        top: 440px;
+    }
+    30% {
+        top: 120px; 
+    }
+    50% {
+        top: 100px;
+    }
+    80% {
+        top: 120 px;
+    }
+
+    100% {
+        top: 440px;
+    }
+}
